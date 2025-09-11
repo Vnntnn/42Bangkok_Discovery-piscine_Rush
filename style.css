@@ -1,0 +1,49 @@
+/* พื้นหลัง gradient + จัดเนื้อหา */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+}
+
+/* เก็บ content ตรงกลาง */
+.center-box {
+  text-align: center;
+}
+
+/* หัวข้อใหญ่ */
+h1 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+/* ปุ่ม*/
+.btn-custom {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* effect hover */
+.btn-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* animation fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
