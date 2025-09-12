@@ -3,39 +3,205 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rush 00 - Home</title>
-    <!-- ดึง Bootstrap 5 มาใช้ -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <!-- ดึง CSS -->
+    <title>42 Bangkok Discovery Piscine - Showcase</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <!-- Local styles -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- กล่องหลักที่อยู่ตรงกลาง -->
-    <div class="center-box">
-      <!-- หัวข้อ -->
-      <h1 class="fade-in">Welcome to Our Showcase</h1>
-
-      <!-- ปุ่มกดไปยัง CV ของแต่ละคน -->
-      <div class="d-flex gap-4 justify-content-center">
-        <a
-          href="guport/index.html"
-          class="btn btn-light btn-custom fade-in"
-          data-delay="200"
-          >Beamza007</a
-        >
-        <a
-          href="cv_person2.html"
-          class="btn btn-dark btn-custom fade-in"
-          data-delay="400"
-          >Person 2</a
-        >
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-code-slash me-2"></i>42 Bangkok
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#showcase">Showcase</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
 
-    <!-- ดึง JS ของเรา -->
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-background"></div>
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-12 text-center">
+            <h1 class="hero-title mb-4">
+              Welcome to Our
+              <span class="gradient-text">Digital Showcase</span>
+            </h1>
+            <p class="hero-subtitle mb-5">
+              Discover the innovative projects and creative solutions crafted by our talented developers
+            </p>
+            <a href="#showcase" class="btn btn-primary btn-hero">
+              <i class="bi bi-arrow-down me-2"></i>Explore Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-8 text-center">
+            <h2 class="section-title mb-3">Featured Projects</h2>
+            <p class="section-subtitle">Explore the diverse talents and innovative solutions from our development team</p>
+          </div>
+        </div>
+        
+        <div class="row g-4">
+          <!-- Beamza007 Card -->
+          <div class="col-12 col-lg-6">
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-header">
+                <div class="project-icon">
+                  <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="project-badge">Portfolio</div>
+              </div>
+              <div class="card-body">
+                <h3 class="project-title">Beamza007</h3>
+                <p class="project-description">
+                  A comprehensive full-stack application showcasing modern web development practices with responsive design and interactive features.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">Vibe</span>
+                  <span class="tech-tag">Jazz</span>
+                  <span class="tech-tag">Rock</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="guport/index.html" class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-eye me-1"></i>View Project
+                </a>
+                <a href="#" class="btn btn-link btn-sm">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thanabodee Card -->
+          <div class="col-12 col-lg-6">
+            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-header">
+                <div class="project-icon">
+                  <i class="bi bi-person-badge"></i>
+                </div>
+                <div class="project-badge">Portfolio</div>
+              </div>
+              <div class="card-body">
+                <h3 class="project-title">Nine teaw kai</h3>
+                <p class="project-description">
+                  A modern, responsive portfolio website featuring clean design, smooth animations, and comprehensive project showcase.
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-tag">Vibe</span>
+                  <span class="tech-tag">Rat</span>
+                  <span class="tech-tag">Beggar</span>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="thangkul/index.html" class="btn btn-outline-primary btn-sm">
+                  <i class="bi bi-eye me-1"></i>View Portfolio
+                </a>
+                <a href="https://github.com/Vnntnn" class="btn btn-link btn-sm" target="_blank">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h2 class="section-title mb-4">About This Showcase</h2>
+            <p class="lead mb-4">
+              This platform represents the culmination of our intensive web development training at 42 Bangkok Discovery Piscine.
+            </p>
+            <p class="mb-4">
+              Each project demonstrates unique approaches to modern web development, from responsive design principles to interactive user experiences.
+            </p>
+            <div class="stats-row">
+              <div class="stat-item">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Projects</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Technologies</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Responsive</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-visual">
+              <div class="floating-card">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <div class="floating-card">
+                <i class="bi bi-palette"></i>
+              </div>
+              <div class="floating-card">
+                <i class="bi bi-lightning"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0 text-muted">&copy; 2025 42 Bangkok Discovery Piscine. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="#" class="btn btn-link btn-sm me-3">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="#" class="btn btn-link btn-sm">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Local scripts -->
     <script src="script.js"></script>
   </body>
 </html>
