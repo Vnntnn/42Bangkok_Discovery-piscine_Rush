@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #f0f0f0;
+  background-color: #111;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  background: #222;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li {
+  margin: 15px 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  background: #007BFF;
+}
+
+/* Home Section */
+.home {
+  background: url("https://picsum.photos/1600/900") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.home .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.home h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.home .links a {
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.home .links a:hover {
+  background: #0056b3;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.section ul {
+  list-style: none;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin: 20px 0;
+}
