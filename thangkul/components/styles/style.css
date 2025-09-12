@@ -1,9 +1,8 @@
-/* Base */
 :root {
   --bg: #f7f7f7;
   --fg: #222;
   --muted: #6c757d;
-  --brand: #2f4858; /* muted classic blue/green */
+  --brand: #2f4858;
   --brand-accent: #3f6b7a;
   --card: #ffffff;
   --border: #e6e6e6;
@@ -33,7 +32,7 @@ body {
 
 /* Sections */
 .section {
-  padding: 96px 0; /* account for fixed navbar */
+  padding: 96px 0;
 }
 .section-alt {
   background: #ffffff;
@@ -95,19 +94,18 @@ body {
 /* Skills heading connector */
 .skills-connector {
   position: relative;
-  height: 12px; /* small spacer under the heading */
+  height: 12px;
 }
 .skills-connector::before {
   content: "";
   position: absolute;
-  left: 16px; /* align visually with skills-rail (8px + dot radius) */
+  left: 16px;
   top: 0;
   bottom: 0;
   width: 2px;
   background: var(--border);
 }
 
-/* Fine-tune for small screens */
 @media (max-width: 574px) {
   .skills-connector::before { left: 14px; }
 }
@@ -120,9 +118,9 @@ body {
 .skills::before {
   content: "";
   position: absolute;
-  left: 8px; /* line x-position */
-  top: -28px; /* start above first item to meet the h2 */
-  bottom: 0; /* extend to last item */
+  left: 8px;
+  top: -28px;
+  bottom: 0;
   width: 2px;
   background: var(--brand-accent);
   z-index: 0;
@@ -130,7 +128,7 @@ body {
 .skills-item { position: relative; margin-bottom: 14px; }
 .skills-dot {
   position: absolute;
-  left: -1px; /* centers 10px dot on 2px line: -1 = (line 2 / 2) - (dot 10 / 2) */
+  left: -1px;
   top: 8px;
   width: 10px;
   height: 10px;
@@ -138,22 +136,21 @@ body {
   background: var(--brand-accent);
   z-index: 2;
 }
-/* horizontal connector from main line to the skill text */
+
 .skills-item::before {
   content: "";
   position: absolute;
-  left: 10px; /* slight offset so it doesn't collapse into the main line */
-  top: 13px; /* align with dot center (8px + 5px radius) */
-  width: 24px; /* length to clear the dot and reach content */
+  left: 10px;
+  top: 13px;
+  width: 24px;
   height: 2px;
   background: var(--brand-accent);
   z-index: 1;
 }
-/* move text away so dot never overlaps text */
+
 .skills-content { padding-left: 36px; }
 .skills-name { font-weight: 500; }
 
-/* Remove obsolete styles */
 .skills-rail { display: none !important; }
 .skills-connector { display: none !important; }
 
@@ -164,6 +161,5 @@ body {
 /* Footer */
 footer { background: #fbfbfb; border-top: 1px solid var(--border); }
 
-/* Utilities */
 .text-muted { color: var(--muted) !important; }
 .shadow-sm { box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.05) !important; }

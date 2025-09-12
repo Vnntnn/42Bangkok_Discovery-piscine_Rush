@@ -1,5 +1,3 @@
-// Apple-inspired Modern Portal JavaScript
-
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize AOS (Animate On Scroll)
     if (typeof AOS !== 'undefined') {
