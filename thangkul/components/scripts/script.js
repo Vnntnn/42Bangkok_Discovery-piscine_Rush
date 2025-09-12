@@ -36,10 +36,6 @@
         currentId = sec.id;
         break;
       }
-      // If we're past the last section bottom, keep the last one active
-      if (i === sections.length - 1 && scrollTop >= bottom) {
-        currentId = sec.id;
-      }
     }
 
     navLinks.forEach(link => {

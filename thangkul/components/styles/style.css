@@ -18,7 +18,7 @@ body {
 /* Navbar */
 .custom-navbar {
   background: linear-gradient(180deg, var(--brand), var(--brand-accent));
-  padding: 2vh;
+  padding: 1rem 0;
 }
 .custom-navbar .nav-link {
   color: #e9eef1;
@@ -32,13 +32,13 @@ body {
 
 /* Sections */
 .section {
-  padding: 96px 0;
+  padding: 4rem 0;
 }
 .section-alt {
   background: #ffffff;
 }
 .section-about {
-  padding: 15vh;
+  padding: 6rem 0;
 }
 
 /* Profile */
@@ -106,10 +106,6 @@ body {
   background: var(--border);
 }
 
-@media (max-width: 574px) {
-  .skills-connector::before { left: 14px; }
-}
-
 /* Single brand-accent line for Skills list */
 .skills {
   position: relative;
@@ -163,3 +159,133 @@ footer { background: #fbfbfb; border-top: 1px solid var(--border); }
 
 .text-muted { color: var(--muted) !important; }
 .shadow-sm { box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.05) !important; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-navbar {
+    padding: 0.5rem 0;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .section-about {
+    padding: 4rem 0;
+  }
+  
+  .profile-photo {
+    max-width: 200px;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .timeline {
+    padding-left: 20px;
+  }
+  
+  .timeline::before {
+    left: 6px;
+  }
+  
+  .timeline-dot {
+    left: -4px;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .timeline-content {
+    padding: 12px;
+  }
+  
+  .skills {
+    padding-left: 20px;
+  }
+  
+  .skills::before {
+    left: 6px;
+  }
+  
+  .skills-dot {
+    left: -3px;
+    width: 8px;
+    height: 8px;
+  }
+  
+  .skills-item::before {
+    left: 8px;
+    width: 20px;
+  }
+  
+  .skills-content {
+    padding-left: 28px;
+  }
+}
+
+@media (max-width: 574px) {
+  .skills-connector::before { 
+    left: 14px; 
+  }
+  
+  .section {
+    padding: 2rem 0;
+  }
+  
+  .section-about {
+    padding: 3rem 0;
+  }
+  
+  .timeline {
+    padding-left: 16px;
+  }
+  
+  .timeline::before {
+    left: 4px;
+  }
+  
+  .timeline-dot {
+    left: -6px;
+    width: 10px;
+    height: 10px;
+  }
+  
+  .skills {
+    padding-left: 16px;
+  }
+  
+  .skills::before {
+    left: 4px;
+  }
+  
+  .skills-dot {
+    left: -5px;
+    width: 6px;
+    height: 6px;
+  }
+  
+  .skills-item::before {
+    left: 6px;
+    width: 16px;
+  }
+  
+  .skills-content {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-photo {
+    max-width: 290px;
+  }
+  
+  .timeline-content {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .skills-content {
+    padding-left: 20px;
+    font-size: 0.9rem;
+  }
+}
